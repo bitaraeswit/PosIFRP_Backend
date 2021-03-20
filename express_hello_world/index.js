@@ -13,6 +13,13 @@ app.get('/sobre', (req, res) => {
   res.send("Olá! pagina sobre") // resposta depois que o usuário acessa o sistema
 });
 
+app.get('/CadastroCliente', (req, res) => {
+  res.send("Pagina de cadastro de Clientes") 
+});
+
+app.get('/ListaProduto', (req, res) => {
+  res.send("Listas dos produtos") 
+});
 
 //chamar rotas com parametros
 let params_module = require ('/params.js');
@@ -31,6 +38,11 @@ app.get('/json ', (req, res) => {
 //metodo post
 app.post('/teste_post ', (req, res) => {
   res.send("Você acessou uma página via metodo POST") 
+});
+
+app.post('/login', (req, res) => {
+  res.send("Vc está logado") 
+
 });
 
 app.listen(port, () => console.log(`Escutando na porta ${port}`)); //responsavel por escutar

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Cadastro Cliente</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <table>
+    <h1>Cadastro de Cliente</h1>
+    <form>
+      <tr>
+        <td colspan=2>Nome <br> <input type=text size=100%></td>
+      </tr>
+
+      <tr>
+        <td colspan=2>Endereço (rua, Numero, Aptop, Bairro(Distrito, etc) <br> <input type=text size=100%></td>
+      </tr>
+
+      <tr>
+        <td colspan=2>Telefone<br> <input type=text size=30%></td>
+      </tr>
+      <tr>
+        <td colspan=2>
+          Cidade <br>
+          <select name="cidade">
+            <option value="1.1">Ubá
+            <option value="1.2">Rio Pomba
+            <option value="1.3">Viçosa
+            <option value="1.4">Porto Firme
+          </select>
+        </td>
+
+      </tr>
+      <tr>
+        <td>Sexo<br> <input type=radio>Masculino <br> <input type=radio>Feminino</td>
+      </tr>
+      <tr>
+        <td> CPF <br><input type="text" placeholder="XXX.XXX.XXX-XX" pattern="^\d{3}\.\d{3}\.\d{3}-\d{2}$" name=cpf
+            size=30%></td>
+      </tr>
+      <tr>
+        <td>RG<br> <input type=text size=30%></td>
+      </tr>
+      <tr>
+        <td> Cursos Realizados <br>
+          <input type="checkbox">HTML
+          <input type="checkbox">CSS
+          <input type="checkbox">JavaScript
+          <input type="checkbox">PHP
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="story">Observação:</label><br>
+          <textarea id="story" name="story" rows="3" cols="100"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td colspan=1>
+          <center><input class="button" type="submit" value="Enviar"> <input class="button" type="reset" value="Apagar">
+          </center>
+        </td>
+      </tr>
+    </form>
+  </table>
+</body>
+
+</html>

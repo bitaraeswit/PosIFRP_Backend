@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <h1>Realizar Login</h1>
+  <form action="">
+    <div>
+      <label for="username">Nome de Usuário:</label><br>
+      <input type="text" id="username" name="username">
+    </div>
+
+    <div>
+      <label for="pass">Senha deve conter no minimo 8 caracteres:</label><br>
+      <input type="password" id="pass" name="password" minlength="8" required>
+    </div>
+
+    <input type="submit" value="Entrar" class="button">
+    <input type="reset" value="Cancelar" class="button">
+  </form>
+</body>
+
+</html>
